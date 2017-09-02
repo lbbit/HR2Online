@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/start">
+        <file>src/gamebutton.wav</file>
+        <file>src/5473.wav</file>
+    </qresource>
+</RCC>

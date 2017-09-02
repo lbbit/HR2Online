@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GameSelect</class>
+ <widget class="QWidget" name="GameSelect">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>450</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="pushButton_gamestart">
+   <property name="geometry">
+    <rect>
+     <x>165</x>
+     <y>450</y>
+     <width>120</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{border-image:url(:/Gameselect/src/STARTGAME_W.png)}
+QPushButton:hover{border-image: url(:/Gameselect/src/STARTGAME_P.png)}
+QPushButton:pressed{border-image:url(:/Gameselect/src/STARTGAME_C.png) }</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_text_rival">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>150</y>
+     <width>60</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="index.qrc">:/Gameselect/src/RIVAL_W_60_30.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_text_difficulty">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>240</y>
+     <width>60</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="index.qrc">:/Gameselect/src/DIFFICULTY_W_60_30.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_text_horse">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>360</y>
+     <width>60</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="index.qrc">:/Gameselect/src/HORSE_W_60_30.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_return">
+   <property name="geometry">
+    <rect>
+     <x>45</x>
+     <y>515</y>
+     <width>80</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{border-image:url(:/Return/src/RETURN_W.png)}
+QPushButton:hover{border-image:url(:/Return/src/RETURN_P.png) }
+QPushButton:pressed{border-image: url(:/Return/src/RETURN_C.png)}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_rival_last">
+   <property name="geometry">
+    <rect>
+     <x>155</x>
+     <y>150</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{border-image:url(:/Gameselect/src/LASTINDEX_LEFT_W.png)}
+QPushButton:hover{border-image: url(:/Gameselect/src/LASTINDEX_LEFT_P.png)}
+QPushButton:pressed{border-image:url(:/Gameselect/src/LASTINDEX_LEFT_C.png) }</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_difficulty_last">
+   <property name="geometry">
+    <rect>
+     <x>155</x>
+     <y>240</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{border-image:url(:/Gameselect/src/LASTINDEX_LEFT_W.png)}
+QPushButton:hover{border-image: url(:/Gameselect/src/LASTINDEX_LEFT_P.png)}
+QPushButton:pressed{border-image:url(:/Gameselect/src/LASTINDEX_LEFT_C.png) }</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_horse_last">
+   <property name="geometry">
+    <rect>
+     <x>155</x>
+     <y>360</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{border-image:url(:/Gameselect/src/LASTINDEX_LEFT_W.png)}
+QPushButton:hover{border-image: url(:/Gameselect/src/LASTINDEX_LEFT_P.png)}
+QPushButton:pressed{border-image:url(:/Gameselect/src/LASTINDEX_LEFT_C.png) }</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_rival_next">
+   <property name="geometry">
+    <rect>
+     <x>355</x>
+     <y>150</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{border-image:url(:/Gameselect/src/NEXTINDEX_RIGHT_W.png)}
+QPushButton:hover{border-image: url(:/Gameselect/src/NEXTINDEX_RIGHT_P.png)}
+QPushButton:pressed{border-image:url(:/Gameselect/src/NEXTINDEX_RIGHT_C.png) }</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_horse_next">
+   <property name="geometry">
+    <rect>
+     <x>355</x>
+     <y>360</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{border-image:url(:/Gameselect/src/NEXTINDEX_RIGHT_W.png)}
+QPushButton:hover{border-image: url(:/Gameselect/src/NEXTINDEX_RIGHT_P.png)}
+QPushButton:pressed{border-image:url(:/Gameselect/src/NEXTINDEX_RIGHT_C.png) }</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_difficulty_next">
+   <property name="geometry">
+    <rect>
+     <x>355</x>
+     <y>240</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{border-image:url(:/Gameselect/src/NEXTINDEX_RIGHT_W.png)}
+QPushButton:hover{border-image: url(:/Gameselect/src/NEXTINDEX_RIGHT_P.png)}
+QPushButton:pressed{border-image:url(:/Gameselect/src/NEXTINDEX_RIGHT_C.png) }</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_select_rival">
+   <property name="geometry">
+    <rect>
+     <x>195</x>
+     <y>145</y>
+     <width>150</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>楷体</family>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_select_difficulty">
+   <property name="geometry">
+    <rect>
+     <x>225</x>
+     <y>235</y>
+     <width>90</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_select_horse">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>330</y>
+     <width>120</width>
+     <height>90</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>70</y>
+     <width>150</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="index.qrc">:/Gameselect/src/PREPAREGAMELOGO_W_150_60.png</pixmap>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="index.qrc"/>
+ </resources>
+ <connections/>
+</ui>
