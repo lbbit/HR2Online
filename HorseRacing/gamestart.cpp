@@ -91,7 +91,7 @@ void GameStart::flashNow(int S)
         this->setPalette(this_palette);
         //随机背景音乐
         BGMs[BGM]->setLoops(5);
-        BGMs[BGM]->play();
+        startBGM();
         //所有数据初始化
         horse1IsRun2=true;
         horse2IsRun2=false;
@@ -290,7 +290,7 @@ void GameStart::on_pushButton_StartandStop_clicked()
     {
         ui->textBrowser_log->append("暂停游戏...");
         ui->pushButton_StartandStop->setText("开始游戏");
-        BGMs[BGM]->stop();
+        stopBGM();
         //暂停游戏
         //输出日志
         QFile logtemp("HR_log.txt");
@@ -317,7 +317,7 @@ void GameStart::on_pushButton_StartandStop_clicked()
     {
         ui->textBrowser_log->append("开始游戏...");
         ui->pushButton_StartandStop->setText("暂停游戏");
-        BGMs[BGM]->play();
+        startBGM();
         //继续游戏
         //输出日志
         QFile logtemp("HR_log.txt");
@@ -356,6 +356,23 @@ void GameStart::clockStartOut()
     }
 
 }
+
+// 播放音乐
+void GameStart::startBGM()
+{
+    if (withmusic) {
+        BGMs[BGM]->play();
+    }
+}
+
+// 停止播放音乐
+void GameStart::stopBGM()
+{
+    if (withmusic) {
+        BGMs[BGM]->stop();
+    }
+}
+
 //没隔0.05s刷新一次界面
 void GameStart::clockGameOut()
 {
@@ -432,7 +449,7 @@ void GameStart::clockGameOut()
         if(keyGroup>=20)
         {
             //关闭音乐
-            BGMs[BGM]->stop();
+            stopBGM();
             //结算游戏结果，刷新个人最高成绩，刷新排行榜，是否超越对手，是否开到新马
             remainTime--;
             ui->lcdNumber_lefttime->display(remainTime);

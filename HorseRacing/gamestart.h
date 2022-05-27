@@ -51,6 +51,8 @@ private:
     void refreshE();        //刷新简单排行榜
     void refreshH();        //刷新困难排行榜
     void OpenHorse();       //开马
+    void startBGM();        // 开bgm
+    void stopBGM();         // 关bgm
 
 signals:
     void display(int number);
